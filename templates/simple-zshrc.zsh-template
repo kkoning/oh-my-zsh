@@ -9,15 +9,16 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 
-if [-e /usr/local/bin]
+# Add custom path entries; higher precedence is lower
+if [ -e /usr/local/bin ]; then
 	PATH=/usr/local/bin:$PATH
 fi
 
-if [-e ~/Dropbox/bin]
+if [ -e ~/Dropbox/bin ]; then
 	PATH=~/Dropbox/bin:$PATH
 fi
 
-if [-e ~/bin]
+if [ -e ~/bin ]; then
 	PATH=~/bin:$PATH
 fi
 
