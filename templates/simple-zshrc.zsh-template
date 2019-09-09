@@ -1,0 +1,25 @@
+
+### Oh-My-Zsh Config
+# For more options, see ~/.oh-my-zsh/templates/zshrc.zsh-template
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="azure"
+CASE_SENSITIVE="true"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+
+if [-e /usr/local/bin]
+	PATH=/usr/local/bin:$PATH
+fi
+
+if [-e ~/Dropbox/bin]
+	PATH=~/Dropbox/bin:$PATH
+fi
+
+if [-e ~/bin]
+	PATH=~/bin:$PATH
+fi
+
+
+
