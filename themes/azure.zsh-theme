@@ -88,7 +88,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ $UID -eq 0 ]]; then
-    prompt_segment red default "⚠︎⚠︎⚠︎ %B%n@%m%b ⚙︎⚙︎⚙︎ "
+    prompt_segment red default "⚠️  %B%n@%m%b ⚠️ "
   else
     prompt_segment 25 default "🏳️‍🌈  %B%n@%m%b 👩🏼‍💻 "
   fi
